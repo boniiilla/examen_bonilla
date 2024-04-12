@@ -17,8 +17,13 @@ class Sorting:
 
     def ordenar_numeros(self):
         Sorting.pedir_numeros(self)
-        error = False
-        for numero in range(len(self.numeros)):
-            if self.numeros[numero] > self.numeros[numero +1] and error == False:
-                self.numeros[numero], self.numeros[numero +1] = self.numeros[numero +1], self.numeros[numero]
-                print(numero)
+        for numero1 in range(len(self.numeros)):
+            for numero2 in range(numero1,len(self.numeros)):
+                if self.numeros[numero1] > self.numeros[numero2]:
+                    self.numeros[numero1], self.numeros[numero2] = self.numeros[numero2], self.numeros[numero1]
+    
+    def mostrar_lista(self):
+        Sorting.pedir_numeros(self)
+        print("Lista ordenada:")
+        for numero in self.numero:
+            print(f"\t{numero}")

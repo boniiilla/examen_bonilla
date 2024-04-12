@@ -2,5 +2,5 @@ from sorting import Sorting
 
 class Main:
     ordenar = Sorting()
-    ordenar.ordenar_numeros()
+    ordenar.mostrar_lista()
 app = Main()

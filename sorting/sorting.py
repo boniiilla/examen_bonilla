@@ -25,5 +25,5 @@ class Sorting:
     def mostrar_lista(self):
         Sorting.pedir_numeros(self)
         print("Lista ordenada:")
-        for numero in self.numero:
+        for numero in self.numeros:
             print(f"\t{numero}")

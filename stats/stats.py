@@ -11,7 +11,7 @@ class Statistics:
         self.suma_desviacio: int = 0
         self.desviacio_e: int = 0
 
-    def calcul_mitjana(self):
+    def calcul_mitjana(self, suma_num):
         for numero in self.numeros:
             suma_num = numero + suma_num
         self.mitjana = suma_num / len(self.numeros)
